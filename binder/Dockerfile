@@ -19,6 +19,9 @@ RUN unzip ijava-kernel.zip -d ijava-kernel \
   && cd ijava-kernel \
   && python3 install.py --sys-prefix
 
+COPY binder/startup_script /
+RUN chmod +x /startup_script
+
 # Set up the user environment
 
 ENV NB_USER jovyan
@@ -35,8 +38,7 @@ RUN chown -R $NB_UID $HOME
 
 USER $NB_USER
 
-COPY binder/startup_script /
-RUN chmod +x /startup_script && /startup_script
+RUN /startup_script
 
 # Launch the notebook server
 WORKDIR $HOME
