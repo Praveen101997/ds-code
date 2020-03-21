@@ -14,7 +14,6 @@ read -p "Enter your choice: "  option
 echo "Selected Choice $option!"
 #Pass the variable in string 
 case "$option" in 
-    #case 1 
     "1") git init ;; 
       
     #case 2 
