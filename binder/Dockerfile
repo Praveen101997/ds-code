@@ -22,8 +22,8 @@ RUN unzip ijava-kernel.zip -d ijava-kernel \
 COPY binder/startup_script /
 RUN chmod +x /startup_script
 
-COPY binder/gits /
-RUN chmod +x /gits
+COPY binder/gits /bin/
+RUN chmod +x /bin/gits
 
 # Set up the user environment
 
