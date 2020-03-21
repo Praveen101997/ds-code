@@ -1,0 +1,23 @@
+pip3 install jupyter_contrib_nbextensions jupyter_nbextensions_configurator
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/toc2 --user
+jupyter nbextension enable toc2/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/autosavetime --user
+jupyter nbextension enable autosavetime/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/collapsible_headings --user
+jupyter nbextension enable collapsible_headings/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/highlight_selected_word --user
+jupyter nbextension enable highlight_selected_word/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/scratchpad --user
+jupyter nbextension enable scratchpad/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/codefolding --user
+jupyter nbextension enable codefolding/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/highlighter --user
+jupyter nbextension enable highlighter/highlighter
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/scroll_down --user
+jupyter nbextension enable scroll_down/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/livemdpreview --user
+jupyter nbextension enable livemdpreview/livemdpreview
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/nbextensions_configurator --user
+jupyter nbextension enable nbextensions_configurator/tree_tab/main
+jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/nbextensions_configurator --user
+jupyter nbextension enable nbextensions_configurator/config_menu/main
