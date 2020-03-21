@@ -22,6 +22,9 @@ RUN unzip ijava-kernel.zip -d ijava-kernel \
 COPY binder/startup_script /
 RUN chmod +x /startup_script
 
+COPY binder/gits /
+RUN chmod +x /gits
+
 # Set up the user environment
 
 ENV NB_USER jovyan
