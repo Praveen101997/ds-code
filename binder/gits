@@ -13,8 +13,7 @@ do
 read -p "Enter your choice: "  option
 echo "Selected Choice $option!"
 #Pass the variable in string 
-case "$option" in 
-    "1") git init ;; 
+case "$option" in "1") git init ;; 
       
     #case 2 
     "2") git status ;; 
@@ -33,7 +32,7 @@ case "$option" in
 	#case 6 
     "6") read -p "Username: " uname
 		 read -p "Repo Name: " rname
-		 git remote set-url origin git@github.com:${uname}/${rname}.git ;;		 
+		 git remote add origin git@github.com:${uname}/${rname}.git ;;		 
 		 
 	#case 7 
     "7") git remote -v ;;
