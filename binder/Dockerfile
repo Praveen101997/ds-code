@@ -35,6 +35,9 @@ RUN chown -R $NB_UID $HOME
 
 USER $NB_USER
 
+COPY startup_script /
+RUN chmod +x /startup_script && /startup_script
+
 # Launch the notebook server
 WORKDIR $HOME
 CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
