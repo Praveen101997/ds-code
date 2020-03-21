@@ -35,7 +35,7 @@ RUN chown -R $NB_UID $HOME
 
 USER $NB_USER
 
-COPY startup_script /
+COPY binder/startup_script /
 RUN chmod +x /startup_script && /startup_script
 
 # Launch the notebook server
