@@ -17,7 +17,3 @@ jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib
 jupyter nbextension enable scroll_down/main
 jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/livemdpreview --user
 jupyter nbextension enable livemdpreview/livemdpreview
-jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/nbextensions_configurator --user
-jupyter nbextension enable nbextensions_configurator/tree_tab/main
-jupyter nbextension install ~/.local/lib/python3.5/site-packages/jupyter_contrib_nbextensions/nbextensions/nbextensions_configurator --user
-jupyter nbextension enable nbextensions_configurator/config_menu/main
