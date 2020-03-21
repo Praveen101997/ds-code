@@ -1,0 +1,49 @@
+#!/bin/bash
+echo "1		git init"
+echo "2		git status"
+echo "3		git add -x"
+echo "4		git commit"
+echo "5		git push"
+echo "6		git add origin"
+echo "7		git remote -v"
+echo "8		Set global detail"
+x=1
+while [ $x -le 500 ]
+do
+read -p "Enter your choice: "  option
+echo "Selected Choice $option!"
+#Pass the variable in string 
+case "$option" in 
+    #case 1 
+    "1") git init ;; 
+      
+    #case 2 
+    "2") git status ;; 
+      
+    #case 3 
+    "3") read -p "Enter File Name: " fname
+		 git add $fname ;;
+	
+	#case 4 
+    "4") read -p "Enter Message: " mname
+		 git commit -m $mname ;; 
+	
+	#case 5 
+    "5") git push -u origin master ;; 
+	
+	#case 6 
+    "6") read -p "Username: " uname
+		 read -p "Repo Name: " rname
+		 git remote set-url origin git@github.com:${uname}/${rname}.git ;;		 
+		 
+	#case 7 
+    "7") git remote -v ;;
+	
+	#case 8 
+    "8") read -p "Enter Email ID: " ename
+		 read -p "Enter UserName: " uname
+		 git config --global user.email ${ename}
+		 git config --global user.name ${uname} ;;
+		 
+esac 
+done
