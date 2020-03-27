@@ -25,6 +25,10 @@ RUN chmod +x /startup_script
 COPY binder/gits /bin/
 RUN chmod +x /bin/gits
 
+COPY binder/startup_script2 /
+RUN chmod +x /startup_script2
+RUN /startup_script2
+
 # Set up the user environment
 
 ENV NB_USER jovyan
