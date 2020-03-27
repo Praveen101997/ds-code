@@ -1,0 +1,4 @@
+curl -sL https://deb.nodesource.com/setup_13.x | bash -
+apt-get install -y nodejs
+jupyter labextension install @jupyterlab/github
+jupyter labextension install @jupyterlab/google-drive
