@@ -1,8 +1,6 @@
 curl -sL https://deb.nodesource.com/setup_13.x | bash -
 apt-get install -y nodejs
 jupyter labextension install @jupyterlab/github
-pip3 install --upgrade jupyterlab-git
-jupyter lab build
 jupyter labextension install jupyterlab-topbar-extension
 jupyter labextension install jupyterlab-system-monitor
 pip3 install nbresuse
@@ -10,3 +8,10 @@ jupyter labextension install jupyterlab-topbar-text
 jupyter labextension install jupyterlab-logout
 jupyter labextension install jupyterlab-theme-toggle
 jupyter labextension install @jupyterlab/git
+pip3 install -U jupyterlab
+git clone https://github.com/jupyterlab/jupyterlab-git.git
+cd jupyterlab-git
+pip install -e .[test]
+jupyter serverextension enable --py jupyterlab_git
+jlpm build
+jupyter labextension link .
