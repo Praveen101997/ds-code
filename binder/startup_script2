@@ -4,7 +4,7 @@ jupyter labextension install @jupyterlab/github
 jupyter labextension install @jupyterlab/git
 jupyter labextension install jupyterlab-topbar-extension
 jupyter labextension install jupyterlab-system-monitor
-pip install nbresuse
+pip3 install -y nbresuse
 jupyter labextension install jupyterlab-topbar-text
 jupyter labextension install jupyterlab-logout
 jupyter labextension install jupyterlab-theme-toggle
