@@ -7,10 +7,3 @@ pip3 install nbresuse
 jupyter labextension install jupyterlab-topbar-text
 jupyter labextension install jupyterlab-logout
 jupyter labextension install jupyterlab-theme-toggle
-jupyter labextension install @jupyterlab/git
-git clone https://github.com/jupyterlab/jupyterlab-git.git
-cd jupyterlab-git
-pip3 install -e .[test]
-jupyter serverextension enable --py jupyterlab_git
-jlpm build
-jupyter labextension link .
