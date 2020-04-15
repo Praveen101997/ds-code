@@ -8,6 +8,10 @@ https://mybinder.org/v2/gh/Praveen101997/ds-code/master
 
 https://notebooks.gesis.org/binder/v2/gh/Praveen101997/ds-code/master
 
+[![Binder](https://binder.pangeo.io/static/logo.svg)](https://binder.pangeo.io/v2/gh/Praveen101997/ds-code/master)
+
+https://binder.pangeo.io/v2/gh/Praveen101997/ds-code/master
+
 
 
 Credit : From GFG (GeeksForGeeks)
